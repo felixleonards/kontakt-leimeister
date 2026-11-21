@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <title>Prof. Dr. Jan Marco Leimeister</title>
+  <meta name="description" content="Kontakt von Prof. Dr. Jan Marco Leimeister, Universität St.Gallen">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card: #ffffff;
+      --text: #1b1f1c;
+      --muted: #5c665f;
+      --line: #e3e8e4;
+      --green: #0a5f2d;
+      --green-soft: #eef4ef;
+    }
+    * { box-sizing: border-box; }
+    #flow {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 380px;
+      background: var(--card);
+      border: 1px solid rgba(12, 19, 16, 0.08);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 48px rgba(12, 19, 16, 0.12);
+    }
+    .banner {
+      position: relative;
+      height: 130px;
+      background: #c9ccca url("campus.jpg") center / cover no-repeat;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10, 95, 45, 0) 30%, rgba(10, 95, 45, 0.45));
+    }
+    .avatar {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 124px;
+      height: 124px;
+      margin: -62px auto 0;
+      border-radius: 50%;
+      border: 4px solid var(--card);
+      object-fit: cover;
+      background: var(--green-soft);
+    }
+    .content {
+      padding: 14px 24px 24px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 26px;
+      font-size: 26px;
+      font-weight: 650;
+      letter-spacing: -0.2px;
+    }
+    h1 .prefix {
+      display: block;
+      margin-bottom: 2px;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 0.08s ease, filter 0.15s ease;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn svg { width: 20px; height: 20px; flex: none; }
+    .primary { background: var(--green); color: #ffffff; }
+    .primary:hover { filter: brightness(1.1); }
+    .secondary { background: var(--green-soft); color: var(--green); }
+    .secondary:hover { filter: brightness(0.97); }
+    .mail {
+      margin: 18px 0 0;
+      font-size: 15px;
+      color: var(--muted);
+      word-break: break-all;
+    }
+    .mail a { color: inherit; }
+    .logo {
+      margin-top: 22px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+    .logo img {
+      display: block;
+      width: 180px;
+      height: auto;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="flow" aria-hidden="true"></canvas>
+  <main class="card">
+    <div class="banner" aria-hidden="true"></div>
+    <img class="avatar" src="foto.jpg" alt="Prof. Dr. Jan Marco Leimeister" width="124" height="124">
+
+    <div class="content">
+      <h1><span class="prefix">Prof. Dr.</span> Jan Marco Leimeister</h1>
+
+      <div class="buttons">
+        <a class="btn primary" href="kontakt.vcf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M19 8v6M16 11h6"/></svg>
+          <span data-de="Kontakt speichern" data-en="Save contact">Kontakt speichern</span>
+        </a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/prof-jan-marco-leimeister/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+          <span data-de="LinkedIn-Profil" data-en="LinkedIn profile">LinkedIn-Profil</span>
+        </a>
+        <a class="btn secondary" href="mailto:janmarco.leimeister@unisg.ch?subject=Happy%20to%20connect&amp;body=Happy%20to%20connect!%0D%0A%0D%0ABest%20regards%0D%0A">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span data-de="E-Mail schreiben" data-en="Send email">E-Mail schreiben</span>
+        </a>
+      </div>
+
+      <p class="mail"><a href="mailto:janmarco.leimeister@unisg.ch?subject=Happy%20to%20connect&amp;body=Happy%20to%20connect!%0D%0A%0D%0ABest%20regards%0D%0A">janmarco.leimeister@unisg.ch</a></p>
+
+      <div class="logo">
+        <img src="logo-hsg.png" alt="Universität St.Gallen" width="180" height="38">
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var lang = (navigator.language || "de").toLowerCase();
+      if (lang.indexOf("de") === 0) return;
+      document.documentElement.lang = "en";
+      var nodes = document.querySelectorAll("[data-en]");
+      for (var i = 0; i < nodes.length; i++) {
+        nodes[i].textContent = nodes[i].getAttribute("data-en");
+      }
+    })();
+
+    // Hintergrund: gruene Striche, die einem ruhigen Stroemungsfeld folgen
+    (function () {
+      var canvas = document.getElementById("flow");
+      var g = canvas.getContext && canvas.getContext("2d");
+      if (!g) return;
+
+      var GREEN = "0,128,47", INK = "12,19,16";
+      var STYLES = [
+        [GREEN, 0.85, 1.5],
+        [GREEN, 0.55, 1.15],
+        [GREEN, 0.32, 0.9],
+        [INK, 0.5, 0.95]
+      ];
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var W = 0, H = 0, parts = [], raf = 0, last = 0;
+      var pointer = { x: -1e5, y: -1e5 };
+
+      function field(x, y, t) {
+        return Math.sin(x * 0.0017 + t * 0.00019) * 2.2 +
+               Math.cos(y * 0.0017 * 1.35 - t * 0.00015) * 1.8 +
+               Math.sin((x + y) * 0.0017 * 0.55 + t * 0.0001);
+      }
+
+      function spawn(p) {
+        p.x = Math.random() * W;
+        p.y = Math.random() * H;
+        p.px = p.x;
+        p.py = p.y;
+        p.life = 3500 + Math.random() * 4500;
+      }
+
+      function resize() {
+        W = Math.max(1, window.innerWidth);
+        H = Math.max(1, window.innerHeight);
+        var r = Math.min(1.5, window.devicePixelRatio || 1);
+        canvas.width = Math.round(W * r);
+        canvas.height = Math.round(H * r);
+        g.setTransform(r, 0, 0, r, 0, 0);
+        var n = Math.round(Math.min(1500, Math.max(W >= 900 ? 700 : 450, (W * H) / 1400)));
+        parts = [];
+        for (var i = 0; i < n; i++) {
+          var p = { v: 0.55 + Math.random() * 0.9, s: i % 7 === 0 ? 3 : Math.floor(i / 3) % 3 };
+          spawn(p);
+          p.life *= Math.random();
+          parts.push(p);
+        }
+        g.clearRect(0, 0, W, H);
+        if (reduce) paintStill();
+      }
+
+      function paintStill() {
+        g.clearRect(0, 0, W, H);
+        g.fillStyle = "rgba(" + GREEN + ",0.25)";
+        for (var i = 0; i < parts.length; i++) g.fillRect(parts[i].x, parts[i].y, 1.6, 1.6);
+      }
+
+      function frame(t) {
+        var k = last ? Math.min(2.5, (t - last) / 16.667) : 1;
+        last = t;
+        g.globalCompositeOperation = "destination-out";
+        g.fillStyle = "rgba(0,0,0," + (1 - Math.pow(1 - 0.09, k)).toFixed(4) + ")";
+        g.fillRect(0, 0, W, H);
+        g.globalCompositeOperation = "source-over";
+
+        for (var i = 0; i < parts.length; i++) {
+          var p = parts[i];
+          p.px = p.x;
+          p.py = p.y;
+          p.life -= 16.667 * k;
+          if (p.life <= 0) { spawn(p); continue; }
+          var a = field(p.x, p.y, t);
+          var dx = Math.cos(a) * p.v * 1.5;
+          var dy = Math.sin(a) * p.v * 1.5;
+          var ox = p.x - pointer.x, oy = p.y - pointer.y, d2 = ox * ox + oy * oy;
+          if (d2 < 22000) {
+            var d = Math.sqrt(d2) + 0.001, f = ((22000 - d2) / 22000) * 6;
+            dx += (ox / d) * f;
+            dy += (oy / d) * f;
+          }
+          p.x += dx * k;
+          p.y += dy * k;
+          if (p.x < -12) { p.x = W + 12; p.px = p.x; } else if (p.x > W + 12) { p.x = -12; p.px = p.x; }
+          if (p.y < -12) { p.y = H + 12; p.py = p.y; } else if (p.y > H + 12) { p.y = -12; p.py = p.y; }
+        }
+
+        g.lineCap = "round";
+        for (var s = 0; s < STYLES.length; s++) {
+          g.strokeStyle = "rgba(" + STYLES[s][0] + "," + STYLES[s][1] + ")";
+          g.lineWidth = STYLES[s][2];
+          g.beginPath();
+          for (var j = 0; j < parts.length; j++) {
+            var q = parts[j];
+            if (q.s !== s) continue;
+            var sx = q.x - q.px, sy = q.y - q.py, len = Math.hypot(sx, sy);
+            if (len < 0.6) continue;
+            if (len > 10) { sx *= 10 / len; sy *= 10 / len; }
+            g.moveTo(q.x - sx, q.y - sy);
+            g.lineTo(q.x, q.y);
+          }
+          g.stroke();
+        }
+        raf = requestAnimationFrame(frame);
+      }
+
+      function start() { if (!reduce && !raf) { last = 0; raf = requestAnimationFrame(frame); } }
+      function stop() { cancelAnimationFrame(raf); raf = 0; }
+
+      window.addEventListener("resize", resize);
+      window.addEventListener("pointermove", function (e) { pointer.x = e.clientX; pointer.y = e.clientY; }, { passive: true });
+      window.addEventListener("pointerleave", function () { pointer.x = -1e5; pointer.y = -1e5; });
+      window.addEventListener("pointerup", function (e) { if (e.pointerType !== "mouse") { pointer.x = -1e5; pointer.y = -1e5; } });
+      document.addEventListener("visibilitychange", function () { document.hidden ? stop() : start(); });
+
+      resize();
+      start();
+    })();
+  </script>
+</body>
+</html>
